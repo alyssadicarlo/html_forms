@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        label {
+            display: block;
+            margin: 16px 0;
+        }
+        fieldset {
+            margin: 16px 0;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <label>Name
+                <input type="text" name="name" placeholder="Enter your name" required>
+            </label>
+            <label>Age
+                <input type="number" name="age" placeholder="Enter your age" min=0 max=100 required>
+            </label>
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

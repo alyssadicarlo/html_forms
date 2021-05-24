@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+</head>
+<style>
+    label {
+        display: block;
+        width: 100%;
+        margin: 16px 0;
+    }
+</style>
+<body>
+    <form>
+        <fieldset>
+            <legend>Sign Up</legend>
+            <label>Name
+                <input type="text" minlength="5" name="name" placeholder="Enter your name" required>
+            </label>
+            <label>Password
+                <input type="password" minlength="6" maxlength="15" name="password" placeholder="Enter your email" required>
+            </label>
+            <label>Email
+                <input type="email" name="email" placedholder="Enter your email" required>
+            </label>
+            <label>About Me
+                <textarea maxlength="250" placeholder="Enter a short description about yourself"></textarea>
+            </label>
+            <label>Please enter the following: Alyssa is awesome!
+                <input type="text" pattern="Alyssa is awesome!" required>
+            </label>
+        </fieldset>
+    </form> 
+</body>
+</html>
