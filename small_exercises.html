@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise One</title>
+
+    <style>
+        label {
+            display: block;
+            width: 100%;
+            margin: 16px 0;
+        }
+        fieldset {
+            margin: 16px 0;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>A Little Bit About You</legend>
+            <label>Your Name
+                <input type="text" name="name" placeholder="Please Enter Your Name">
+            </label>
+            <label>Your Email
+                <input type="email" name="email" placeholder="Please Enter Your Email">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Do you understand this stuff?</legend>
+            <label>
+                <input type="radio" name="understand" value="yes">Of course
+            </label>
+            <label>
+                <input type="radio" name="understand" value="kinda">Meh
+            </label>
+            <label>
+                <input type="radio" name="understand" value="no">Absolutely not
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>What is your favorite color?</legend>
+            <label>
+                <select name="color">
+                    <option value="" disabled selected>--Please select a color--</option>
+                    <option value="red">Red</option>
+                    <option value="black">Black</option>
+                    <option value="green">Green</option>
+                    <option value="purple">Purple</option>
+                    <option value="blue">Blue</option>
+                    <option value="yellow">Yellow</option>
+                </select>
+            </label>
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
